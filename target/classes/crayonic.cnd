@@ -1,8 +1,0 @@
-<crayonic='http://crayonic.com/jcr/1.0'>
-
-[crayonic:folder] mixin
-  - expiration (date) mandatory
-  + jcr:content (nt:base) primary mandatory
-
-[crayonic:file] mixin
-  - description (string)
