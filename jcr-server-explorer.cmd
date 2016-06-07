@@ -1,0 +1,1 @@
+java -jar c:\Users\marek.ANASOFT\.m2\repository\org\apache\jackrabbit\oak-run\1.4.1.ANA1\oak-run-1.4.1.ANA1.jar server http://localhost:4502 Oak-Mongo --db sandbox --host 192.168.99.100

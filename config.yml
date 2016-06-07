@@ -1,0 +1,30 @@
+server:
+  #type: simple
+  rootPath: /api/*
+  applicationContextPath: /
+  
+mongo:
+  seeds:
+  - host: ${sys.dbHost}
+    port: ${sys.dbPort}
+  database: sandbox
+#  credentials:
+#    userName: sandbox
+#    password: sandbox
+
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      threshold: ALL
+      timeZone: UTC
+      target: stdout
+      logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"
+    - type: file
+      currentLogFilename: /log/sandbox.log
+      threshold: ALL
+      archive: true
+      archivedLogFilenamePattern: /log/sandbox-%d.log
+      archivedFileCount: 5
+      timeZone: UTC
+      logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"

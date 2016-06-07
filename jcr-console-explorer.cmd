@@ -1,0 +1,1 @@
+java -jar c:\Users\marek.ANASOFT\.m2\repository\org\apache\jackrabbit\oak-run\1.5.0\oak-run-1.5.0.jar console mongodb://192.168.99.100/sandbox

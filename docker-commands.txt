@@ -1,0 +1,10 @@
+docker-machine.exe start default
+docker-machine.exe stop default
+docker-machine ssh default
+
+cd /d/Projects/crayonic/sandbox-dropwizard/
+mvn clean package docker:build docker:start
+mvn docker:stop
+
+docker exec -it sandbox-dropwizard bash
+tail -F /log/sandbox.log
